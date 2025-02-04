@@ -456,3 +456,10 @@ nav {
     background-color: #300bff;
 
 }
+
+
+
+/* Indentation for sub-nav items */
+nav ul ul li {
+    padding-left: 20px; /* Adjust the indentation as needed */
+}
