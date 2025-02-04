@@ -50,9 +50,9 @@ nav ul li a {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #00796b;
-    width: 200px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: whitesmoke;
+    width: 150px;
+    box-shadow: 0 8px 6px rgba(0, 0, 0, 0.1);
 }
 
 .sub-nav li {
@@ -61,7 +61,7 @@ nav ul li a {
 
 .sub-nav li a {
     padding-left: 20px;
-    color: white;
+    color: rgb(3, 2, 2);
 }
 
 nav ul li:hover .sub-nav {
@@ -95,7 +95,7 @@ nav ul li:hover .sub-nav {
         position: absolute;
         top: 60px;
         right: 0;
-        background-color: #004d40;
+        background-color: #4c4e4e;
         width: 100%;
         text-align: center;
     }
@@ -464,6 +464,39 @@ nav {
 
 
 
+/* Thick Underline Effect on Hover */
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 4px; /* Thicker underline */
+    background-color: #ff6f61;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+}
 
 
 
+
+/* Hover Effects */
+nav ul li a:hover {
+    background-color: #30b7f5;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+/* Dropdown Styling */
+nav ul li.dropdown {
+    position: relative;
+}
+
+nav ul li.dropdown:hover .sub-nav {
+    display: block;
+    animation: fadeIn 0.3s ease-in;
+}
