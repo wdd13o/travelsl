@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 document.addEventListener('DOMContentLoaded', function () {
     // Filter Destinations
-    const allFilters = document.querySelectorAll('#all .filters button');
+    const Filters = document.querySelectorAll('#destinations .filters button');
     const destinationCards = document.querySelectorAll('#destinations .destination-card');
 
     destinationFilters.forEach(button => {
