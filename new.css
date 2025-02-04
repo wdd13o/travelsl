@@ -459,27 +459,17 @@ nav {
 
 
 
-/* Indentation for sub-nav items */
-nav ul ul li {
-    padding-left: 20px; /* Adjust the indentation as needed */
-}
 
 
 
 
 
-  /* Hamburger animation */
-  .hamburger.active span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-}
 
-.hamburger.active span:nth-child(2) {
-    opacity: 0;
-}
 
-.hamburger.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
-}
+
+
+
+
 
 
 
@@ -503,4 +493,83 @@ nav ul li.dropdown > a::after {
     padding-left: 15px; /* Extra indentation */
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     border-left: 3px solid white; /* Visual indication */
+}
+
+.sub-nav li {
+    display: block;
+}
+
+.sub-nav li a {
+    padding: 10px 20px; /* Indentation for sub-menu items */
+    color: white;
+    display: block;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.sub-nav li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    padding-left: 25px; /* Slight indent on hover */
+    transition: padding 0.3s ease-in-out;
+}
+
+/* Show dropdown on hover */
+nav ul .dropdown:hover .sub-nav {
+    display: block;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 51, 102, 0.95);
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        text-align: left;
+        padding: 10px;
+    }
+
+    .sub-nav {
+        position: static;
+        width: 100%;
+        display: none;
+        padding-left: 20px; /* Indent further in mobile view */
+    }
+
+    .dropdown:hover .sub-nav {
+        display: block;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    /* Hamburger animation */
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
 }
