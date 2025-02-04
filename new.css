@@ -60,7 +60,7 @@ nav ul li a {
 }
 
 .sub-nav li a {
-    padding: 10px;
+    padding-left: 20px;
     color: white;
 }
 
@@ -462,4 +462,21 @@ nav {
 /* Indentation for sub-nav items */
 nav ul ul li {
     padding-left: 20px; /* Adjust the indentation as needed */
+}
+
+
+
+
+
+  /* Hamburger animation */
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
 }
