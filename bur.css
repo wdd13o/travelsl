@@ -1,0 +1,111 @@
+/* Hamburger Menu */
+.hamburger {
+    display: none; /* Hidden by default on larger screens */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Navigation Menu */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    position: relative;
+    margin-left: 1.5rem;
+}
+
+nav ul li a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+/* Dropdown Menu */
+.sub-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    padding: 0.5rem 0;
+    min-width: 150px;
+    z-index: 1000;
+}
+
+.sub-nav li {
+    margin: 0;
+}
+
+.sub-nav li a {
+    padding: 0.5rem 1rem;
+    display: block;
+}
+
+.dropdown:hover .sub-nav {
+    display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex; /* Show hamburger on smaller screens */
+    }
+
+    nav {
+        display: none; /* Hide nav by default on smaller screens */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #444;
+    }
+
+    nav.active {
+        display: block; /* Show nav when active class is added */
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 0;
+        text-align: center;
+    }
+
+    nav ul li a {
+        padding: 1rem;
+        display: block;
+    }
+
+    .sub-nav {
+        position: static;
+        background-color: #555;
+    }
+
+    .sub-nav li a {
+        padding-left: 2rem;
+    }
+}

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sierra Leone Travel</title>
+    <link rel="stylesheet" href="new.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png"   alt="Sierra Leone Travel">
+        </div>
+  <!-- Hamburger Icon -->
+  <div class="hamburger" id="hamburger-menu">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+
+        <nav>
+            
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#destinations">Destinations</a>
+                    <ul class="sub-nav">
+                        <li><a href="#all">All</a></li>
+                        <li><a href="#major">North</a></li>
+                        <li><a href="#cities">East</a></li>
+                        <li><a href="#passion">South</a></li>
+                        <li><a href="#vacation">West</a></li>
+                        <li><a href="vacation.html">Vacation</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#things-to-do">Things To Do</a>
+                    <ul class="sub-nav">
+                        <li><a href="#nature-outdoor">Nature & Outdoor</a></li>
+                        <li><a href="#tradition">Tradition</a></li>
+                        <li><a href="#food-drink">Food & Drink</a></li>
+                        <li><a href="#art-culture">Art & Culture</a></li>
+                        <li><a href="#cities">Cities</a></li>
+                        <li><a href="#relaxation">Relaxation</a></li>
+                        <li><a href="#featured">Featured</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#plan-your-trip">Plan Your Trip</a>
+                    <ul class="sub-nav">
+                        <li><a href="#traveling-to-sierra-leone">Traveling to Sierra Leone</a></li>
+                        <li><a href="#getting-around">Getting Around</a></li>
+                        <li><a href="#about-sierra-leone">About Sierra Leone</a></li>
+                        <li><a href="#essential-information">Essential Information</a></li>
+                    </ul>
+                </li>
+                <li><a href="#about">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br><br>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Discover Sierra Leone</h1>
+            <p>Explore the beauty and culture of Sierra Leone.</p>
+            <a href="#destinations" class="cta-button">Explore Destinations</a>
+        </div>
+    </section>
+
+    <br>
+    <section id="destinations">
+        <h2>Popular Destinations</h2>
+        <p>Sierra Leone offers a mix of beautiful beaches, historical sites, and natural attractions. Here are some of the most popular destinations:</p>
+        <div class="filters">
+            <button data-filter="all" class="active">All</button>
+            <button data-filter="north">Northern Province</button>
+            <button data-filter="south">Southern Province</button>
+            <button data-filter="east">Eastern Province</button>
+            <button data-filter="west">Western Area</button>
+        </div>
+        <br>
+        <div class="destination-grid">
+            <!-- Western Area (Freetown District) -->
+            <div class="destination-card" data-category="west">
+                <img src="https://www.vol-direct.net/wp-content/uploads/2023/03/Freetown-couverture.jpg" alt="Freetown">
+                <h3>Freetown City</h3>
+                <p>The capital city offering vibrant beaches, historical landmarks, and nightlife.</p>
+            </div>
+            <div class="destination-card" data-category="west">
+                <img src="https://www.mariandlee.com/wp-content/uploads/2020/04/IMG_4162-1024x768.jpg" alt="Tokeh Beach">
+                <h3>Tokeh & River Number Two Beaches</h3>
+                <p>Peaceful escapes with stunning coastal views.</p>
+            </div>
+            <div class="destination-card" data-category="west">
+                <img src="https://www.visitsierraleone.org/wp-content/uploads/2022/06/Bunce-opt.jpg" alt="Bunce Island">
+                <h3>Bunce Island</h3>
+                <p>A historical site tied to the transatlantic slave trade.</p>
+            </div>
+            <div class="destination-card" data-category="west">
+                <img src="https://www.bigworldsmallpockets.com/wp-content/uploads/2023/03/All-You-Need-to-Know-About-Visiting-Tacugama-Chimpanzee-Sanctuary.jpg" alt="Tacugama Chimpanzee Sanctuary">
+                <h3>Tacugama Chimpanzee Sanctuary</h3>
+                <p>A conservation center for rescued chimpanzees.</p>
+            </div>
+
+            <!-- Northern Province -->
+            <div class="destination-card" data-category="north">
+                <img src="https://th.bing.com/th/id/OIP.5YILZq4zM1irTaY6EvludgHaEK?rs=1&pid=ImgDetMain" alt="Makeni">
+                <h3>Makeni City</h3>
+                <p>Known for its lively markets and cultural experiences.</p>
+            </div>
+            <div class="destination-card" data-category="north">
+                <img src="https://th.bing.com/th/id/OIP.38CRWYxkzc1kxVfenzTs_QHaFj?rs=1&pid=ImgDetMain" alt="Bumbuna Waterfalls">
+                <h3>Bumbuna Waterfalls</h3>
+                <p>A serene spot for nature enthusiasts.</p>
+            </div>
+            <div class="destination-card" data-category="north">
+                <img src="https://www.visitsierraleone.org/wp-content/uploads/2021/10/Senegedugu.jpg" alt="Kabala">
+                <h3>Kabala</h3>
+                <p>A scenic destination for trekking and local cultural experiences.</p>
+            </div>
+            <div class="destination-card" data-category="north">
+                <img src="https://th.bing.com/th/id/R.b9cd63539103c1a9f3d845b1e7590f2a?rik=mrPEbXdLFHMmHQ&pid=ImgRaw&r=0" alt="Loma Mountains">
+                <h3>Loma Mountains (Bintumani Peak)</h3>
+                <p>Ideal for hikers and adventure lovers.</p>
+            </div>
+
+            <!-- Southern Province -->
+            <div class="destination-card" data-category="south">
+                <img src="https://i0.wp.com/sierraloaded.sl/wp-content/uploads/2022/06/Bo-City.jpg" alt="Bo">
+                <h3>Bo City</h3>
+                <p>A vibrant city with markets and local cuisine.</p>
+            </div>
+            <div class="destination-card" data-category="south">
+                <img src="https://th.bing.com/th/id/OIP.9lhqaYsYXLWW3AWnqXZAJAHaDm?rs=1&pid=ImgDetMain" alt="Tiwai Island Wildlife Sanctuary">
+                <h3>Tiwai Island Wildlife Sanctuary</h3>
+                <p>A rich biodiversity hotspot, great for eco-tourism.</p>
+            </div>
+            <div class="destination-card" data-category="south">
+                <img src="https://th.bing.com/th/id/OIP.P76bGVSXGWFekNAqlttE0QAAAA?rs=1&pid=ImgDetMain" alt="Sherbro Island">
+                <h3>Sherbro Island</h3>
+                <p>An idyllic island getaway with untouched beaches.</p>
+            </div>
+            <div class="destination-card" data-category="south">
+                <img src="https://i.pinimg.com/originals/83/e7/2c/83e72c00afb331054eee75362bb6f972.jpg" alt="Shenge Village">
+                <h3>Shenge Village</h3>
+                <p>A traditional fishing village offering peaceful beach experiences.</p>
+            </div>
+
+            <!-- Eastern Province -->
+            <div class="destination-card" data-category="east">
+                <img src="https://th.bing.com/th/id/R.857d664a968a0b8b8f211c1ffaf31b69?rik=9%2fZDRcEBmV2cWg&riu=http%3a%2f%2fphotos.wikimapia.org%2fp%2f00%2f02%2f68%2f80%2f25_big.jpg&ehk=xkPHapgOeTuma9FA4rZEAVYKOM918t08naulnCJ9A7s%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" alt="Kenema">
+                <h3>Kenema City</h3>
+                <p>Known for diamond trading and a rich local culture.</p>
+            </div>
+            <div class="destination-card" data-category="east">
+                <img src="https://c8.alamy.com/comp/2C47XC2/gola-rainforest-national-park-in-sierra-leone-2C47XC2.jpg" alt="Gola Rainforest National Park">
+                <h3>Gola Rainforest National Park</h3>
+                <p>A UNESCO site with incredible biodiversity.</p>
+            </div>
+            <div class="destination-card" data-category="east">
+                <img src="https://th.bing.com/th/id/R.2b9aa56177f5f55cde7edcce36fdab24?rik=Bd6cZ%2f3sH99FTw&riu=http%3a%2f%2fphotos.wikimapia.org%2fp%2f00%2f03%2f41%2f19%2f22_full.jpg&ehk=HxnlI4lbENV%2bMZX7njKtIy%2b3zsLSepk0vALBK2ik%2fGw%3d&risl=&pid=ImgRaw&r=0" alt="Koidu Town">
+                <h3>Koidu Town</h3>
+                <p>Sierra Leone's diamond capital, with mining tours and cultural heritage.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+<!-- Things To Do Section -->
+<section id="things-to-do">
+    <h2>Things To Do</h2>
+    <div class="things-grid">
+        <div class="thing-card">
+            <img src="https://live.staticflickr.com/4325/36191366221_14d29c79b4_b.jpg" alt="Nature & Outdoor">
+            <h3>Nature & Outdoor</h3>
+            <p>Explore Sierra Leone's stunning natural landscapes, wildlife, and outdoor adventures.</p>
+        </div>
+        <div class="thing-card">
+            <img src="https://i.pinimg.com/736x/6a/71/48/6a71488787123deedb62ceee769e22e3.jpg" alt="Tradition">
+            <h3>Tradition</h3>
+            <p>Experience Sierra Leone's rich cultural heritage, traditional ceremonies, and unique customs.</p>
+        </div>
+        <div class="thing-card">
+            <img src="https://i.pinimg.com/originals/07/f0/b1/07f0b1619471b9e6cbd3c30407aed814.jpg" alt="Food & Drink">
+            <h3>Food & Drink</h3>
+            <p>Savor the flavors of Sierra Leonean cuisine, from local delicacies to refreshing drinks.</p>
+        </div>
+        <div class="thing-card">
+            <img src="https://toplist.info/images/800px/music-amp-arts-904843.jpg" alt="Art & Culture">
+            <h3>Art & Culture</h3>
+            <p>Discover Sierra Leone's vibrant art scene, including music, dance, and cultural landmarks.</p>
+        </div>
+        <div class="thing-card">
+            <img src="https://cdn.mappr.co/wp-content/uploads/2022/05/sierra-leone-districts.jpg" alt="Cities">
+            <h3>Cities</h3>
+            <p>Explore the bustling cities of Sierra Leone, each offering a blend of modernity and history.</p>
+        </div>
+        <div class="thing-card">
+            <img src="https://tourismsierraleone.b-cdn.net/wp-content/uploads/2023/09/Place-Resort-in-Sierra-Leone.jpg" alt="Relaxation">
+            <h3>Relaxation</h3>
+            <p>Unwind in Sierra Leone’s serene beaches, resorts, and wellness retreats for ultimate relaxation.</p>
+        </div>
+        <div class="thing-card">
+            <img src="https://th.bing.com/th/id/OIP.zwsIPheY__J6DE5Ft6qQowHaH4?w=7519&h=8000&rs=1&pid=ImgDetMain" alt="Featured">
+            <h3>Featured</h3>
+            <p>Check out our top picks for must-see experiences, from hidden gems to popular attractions in Sierra Leone.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Traveling to Sierra Leone Section -->
+<section id="traveling-to-sierra-leone">
+    <h2>Traveling to Sierra Leone</h2>
+    <div class="travel-info-grid">
+        <div class="travel-info-card">
+            <h3>Getting Around</h3>
+            <p>Explore Sierra Leone by car, bus, or boat. Public transport is available, but renting a car or hiring a local guide provides more flexibility for exploring remote areas.</p>
+            <a href="around.html" class="read-more">Read More</a>
+        </div>
+        <div class="travel-info-card">
+            <h3>About Sierra Leone</h3>
+            <p>Sierra Leone is a beautiful country in West Africa, known for its friendly people, rich history, and diverse landscapes, including beaches, rainforests, and mountains.</p>
+            <a href="aboutsl..html" class="read-more">Read More</a>
+        </div>
+        <div class="travel-info-card">
+            <h3>Essential Information</h3>
+            <p>Before traveling, make sure to have a valid passport and visa. Vaccinations may be required, and travelers are advised to check health precautions. The local currency is the Sierra Leonean leone (SLL).</p>
+            <a href="#essential-information" class="read-more">Read More</a>
+        </div>
+    </div>
+</section>
+
+
+    <footer>
+        <p>&copy; 2025 Sierra Leone Travel. All rights reserved.</p>
+        <p>By Bundu Kallon Jr.</p>
+    </footer>
+
+    <script src="new.js"></script>
+    
+</body>
+</html>

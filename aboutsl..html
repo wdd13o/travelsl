@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Sierra Leone</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+        section {
+            padding: 20px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: moveIn 1s ease-out forwards;
+            will-change: transform, opacity;
+        }
+        section img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            opacity: 0;
+            animation: slideIn 1.5s ease-in-out forwards;
+        }
+
+        h2 {
+            color: #007bff;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+        }
+        .grid-item {
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1.5s forwards;
+        }
+        .grid-item h3 {
+            font-size: 1.5rem;
+            color: #007bff;
+        }
+        .grid-item p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+        .grid-item ul {
+            margin-top: 10px;
+        }
+        .grid-item ul li {
+            margin-bottom: 8px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+            header h1 {
+                font-size: 1.8rem;
+            }
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            animation: fadeInUp 2s forwards;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes moveIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Discover Sierra Leone</h1>
+    </header>
+
+    <section class="move-section">
+        <h2>🌍 Geography & Landscapes</h2>
+        <img src="https://via.placeholder.com/1200x500/cccccc/000000?text=Geography+and+Landscapes" alt="Geography and Landscapes in Sierra Leone">
+        <div class="grid-container">
+            <div class="grid-item">
+                <h3>Beaches</h3>
+                <p>Sierra Leone boasts some of the most beautiful beaches in West Africa, like Lumley Beach, Tokeh Beach, and River Number Two Beach.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Mountains & Highlands</h3>
+                <p>The Loma Mountains, home to Bintumani Peak, offer stunning views and are perfect for hiking adventures.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Rainforests</h3>
+                <p>The Gola Rainforest National Park, a UNESCO biosphere reserve, is a must-visit for eco-tourism enthusiasts.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="move-section">
+        <h2>🌱 Culture & History</h2>
+        <img src="https://via.placeholder.com/1200x500/cccccc/000000?text=Culture+and+History+of+Sierra+Leone" alt="Culture and History of Sierra Leone">
+        <div class="grid-container">
+            <div class="grid-item">
+                <h3>Friendly People</h3>
+                <p>The Sierra Leoneans are known for their hospitality and diverse cultures, including languages like Krio, Mende, and Temne.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Colonial History</h3>
+                <p>Sierra Leone’s history, including Freetown’s role as a home for freed slaves, is a key part of its cultural heritage.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Religious Diversity</h3>
+                <p>The country is predominantly Muslim, with significant Christian and indigenous communities contributing to its vibrant culture.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="move-section">
+        <h2>💼 Economy & Development</h2>
+        <img src="https://via.placeholder.com/1200x500/cccccc/000000?text=Economy+and+Development+in+Sierra+Leone" alt="Economy and Development in Sierra Leone">
+        <div class="grid-container">
+            <div class="grid-item">
+                <h3>Agriculture</h3>
+                <p>Agriculture is a major part of Sierra Leone’s economy, with rice, cocoa, and palm oil being key exports.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Mining</h3>
+                <p>The country is rich in diamonds, gold, and bauxite, although mining practices are still evolving for sustainability.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Tourism</h3>
+                <p>Sierra Leone has been focusing on improving tourism, with stunning beaches and natural parks attracting more visitors each year.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="move-section">
+        <h2>🚶‍♀️ Things to Do & See</h2>
+        <img src="https://via.placeholder.com/1200x500/cccccc/000000?text=Things+to+Do+and+See+in+Sierra+Leone" alt="Things to Do and See in Sierra Leone">
+        <ul>
+            <li>Explore Freetown’s Cotton Tree, Bunce Island, and the American Mende Cemetery</li>
+            <li>Visit the Tiwai Island Wildlife Sanctuary and the Tacugama Chimpanzee Sanctuary</li>
+            <li>Relax on Tokeh Beach or enjoy water sports at River Number Two Beach</li>
+            <li>Discover traditional villages and experience local cultural ceremonies</li>
+        </ul>
+    </section>
+
+    <section class="move-section">
+        <h2>🗺️ Travel Tips</h2>
+        <img src="https://via.placeholder.com/1200x500/cccccc/000000?text=Travel+Tips+for+Sierra+Leone" alt="Travel Tips for Sierra Leone">
+        <ul>
+            <li><strong>Best Time to Visit:</strong> November to March, when the weather is dry and ideal for outdoor activities.</li>
+            <li><strong>Health & Safety:</strong> Malaria prevention is recommended, and travelers should ensure vaccinations are up to date.</li>
+            <li><strong>Visas:</strong> A tourist visa is required, which can be obtained at an embassy or upon arrival.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Discover Sierra Leone. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Check if a section is in view, and animate it when it becomes visible.
+        const sections = document.querySelectorAll('.move-section');
+
+        const isInViewport = (el) => {
+            const rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        };
+
+        const handleScroll = () => {
+            sections.forEach(section => {
+                if (isInViewport(section)) {
+                    section.style.animation = 'moveIn 1s ease-out forwards';
+                }
+            });
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        handleScroll(); // Initial check in case sections are already in view.
+    </script>
+</body>
+</html>

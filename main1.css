@@ -1,0 +1,524 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f5f5f5;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: linear-gradient(90deg, green, white, blue); /* Green, White, Blue gradient */
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #004d40;
+    padding: 15px 20px;
+    position: relative;
+}
+
+
+.logo img {
+    height: 50px;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+/* Dropdown Navigation */
+.dropdown:hover .sub-nav {
+    display: block;
+}
+
+
+/* Hero Section with Animated Background */
+#hero {
+    background-image: url('background1.jpg'); /* Initial background image */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the image */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    animation: changeBackground 20s infinite; /* Animation for background change */
+}
+
+@keyframes changeBackground {
+    0% {
+        background-image: url('https://tourismsierraleone.b-cdn.net/wp-content/uploads/2023/03/Lakka-beach-in-Sierra-Leone-scaled.webp');
+    }
+    20% {
+        background-image: url('https://st3.depositphotos.com/1007553/17389/i/450/depositphotos_173898766-stock-photo-freetown-the-harbour-of-sierra.jpg');
+    }
+    40% {
+        background-image: url('https://www.thetravelmagazine.net/wp-content/uploads/Freetown_street.jpg');
+    }
+    60% {
+        background-image: url('https://66.media.tumblr.com/35b0c5746a58b072e55cf8da38c96a8b/tumblr_nmnwju2eXh1tgoruao6_1280.jpg');
+    }
+    80% {
+        background-image: url('https://cocorioko.net/wp-content/uploads/2016/12/A-CITY.jpg');
+    }
+    100% {
+        background-image: url('https://media.istockphoto.com/id/1343789603/photo/lungi-beach-low-tide-port-loko-sierra-leone.jpg?s=612x612&w=0&k=20&c=2C6j_d6XtGqsUa6a7YU46iF6sc4kU0i-xx7UU0DkoDQ=');
+    }
+}
+
+#hero .hero-content {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for better text readability */
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.cta-button {
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+/* Responsive Layout */
+@media (max-width: 1024px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li a {
+        padding: 12px 20px;
+        font-size: 1.1rem;
+    }
+
+    .sub-nav {
+        position: relative;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li a {
+        padding: 15px;
+        font-size: 1.2rem;
+        text-align: left;
+    }
+
+    nav ul li a:hover {
+        background-color: #007bff;
+    }
+
+    nav.active ul {
+        display: flex;
+    }
+
+    .sub-nav {
+        width: 100%;
+    }
+}
+
+/* Menu Toggle Button for Mobile */
+.menu-toggle {
+    display: none;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Responsive Toggle Button for Mobile */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+
+    nav.active .sub-nav {
+        display: block !important;
+    }
+}
+
+/* Fade-in Effect for Dropdown */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Hero Section */
+#hero {
+    background: url('hero.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #ff6f00;
+    color: white;
+    padding: 12px 20px;
+    margin-top: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background: #ff9100;
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+/* Destination Grid */
+.destination-grid, .things-grid, .trip-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.destination-card, .thing-card, .trip-card {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.destination-card img, .thing-card img, .trip-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+
+
+/* Footer */
+footer {
+    background: #026440;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .sub-nav {
+        position: static;
+        display: none;
+        width: 100%;
+    }
+
+    .dropdown:hover .sub-nav {
+        display: block;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+}
+
+
+
+/* General Styles */
+#destinations {
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#destinations h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+#destinations p {
+    font-size: 1rem;
+    color: #555;
+    max-width: 800px;
+    margin: 10px auto;
+}
+
+/* Filters Section */
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.filters button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.filters button.active,
+.filters button:hover {
+    background-color: #0056b3;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    #destinations h2 {
+        font-size: 1.5rem;
+    }
+
+    #destinations p {
+        font-size: 0.9rem;
+    }
+
+    .filters {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .filters button {
+        width: 80%;
+        padding: 12px;
+        font-size: 1.1rem;
+    }
+}
+
+/* Large Screens */
+@media (min-width: 1024px) {
+    .filters {
+        gap: 20px;
+    }
+
+    .filters button {
+        font-size: 1.2rem;
+    }
+}
+
+
+/* General Styles */
+#traveling-to-sierra-leone {
+    padding: 40px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#traveling-to-sierra-leone h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.travel-info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.travel-info-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.travel-info-card h3 {
+    font-size: 1.75rem;
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+.travel-info-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.travel-info-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .travel-info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #traveling-to-sierra-leone h2 {
+        font-size: 2rem;
+    }
+
+    .travel-info-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .travel-info-card p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #traveling-to-sierra-leone {
+        padding: 20px;
+    }
+
+    .travel-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #traveling-to-sierra-leone h2 {
+        font-size: 1.75rem;
+    }
+
+    .travel-info-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .travel-info-card p {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #traveling-to-sierra-leone {
+        padding: 15px;
+    }
+
+    .travel-info-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .travel-info-card p {
+        font-size: 0.8rem;
+    }
+}
+
+
+/* General Styles for Read More Link */
+.read-more {
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.read-more:hover {
+    color: #0056b3;
+}
+
+/* Responsive adjustments for Read More link */
+@media (max-width: 1024px) {
+    .read-more {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .read-more {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .read-more {
+        font-size: 0.85rem;
+    }
+}
+
+
+
+/* Thick Underline Effect on Hover */
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 4px; /* Thicker underline */
+    background-color: #ff6f61;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+}

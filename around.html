@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting Around in Sierra Leone</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #004d7a;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #004d7a;
+        }
+
+        ul {
+            line-height: 1.8;
+        }
+
+        .icon {
+            font-size: 1.5em;
+            color: #004d7a;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #004d7a;
+            color: white;
+            padding: 10px 0;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            nav ul {
+                text-align: center;
+                padding-top: 10px;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            h2 {
+                font-size: 1.8em;
+            }
+
+            .icon {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Getting Around in Sierra Leone</h1>
+        <nav>
+            <ul>
+                <li><a href="#by-car">🚗 By Car</a></li>
+                <li><a href="#by-bus">🚌 By Bus</a></li>
+                <li><a href="#by-boat">🚤 By Boat</a></li>
+                <li><a href="#by-motorbike">🏍️ By Motorbike</a></li>
+                <li><a href="#by-foot">👣 By Foot</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="by-car">
+            <h2><span class="icon">🚗</span> By Car</h2>
+            <ul>
+                <li><strong>Renting a Car:</strong> Renting a car is a great way to explore Sierra Leone, especially for remote areas. You can rent cars in Freetown and major cities.</li>
+                <li><strong>4x4 Vehicles:</strong> Rent a 4x4 vehicle for off-road areas like the Loma Mountains or Kono District.</li>
+                <li><strong>Driving:</strong> Be prepared for busy traffic in Freetown and rural roads that are scenic but quiet.</li>
+                <li><strong>Driver's License:</strong> An international driver's permit is required to rent a car.</li>
+            </ul>
+        </section>
+
+        <section id="by-bus">
+            <h2><span class="icon">🚌</span> By Bus</h2>
+            <ul>
+                <li><strong>Local Buses:</strong> Public buses are an affordable option for short distances, but they can be crowded and schedules aren't always strict.</li>
+                <li><strong>Intercity Buses:</strong> Long-distance buses like Babu Travel and Best Way Transport connect major cities like Freetown, Bo, Kenema, and Makeni.</li>
+                <li><strong>Minibuses:</strong> Minibuses are popular for shorter distances but can be uncomfortable.</li>
+            </ul>
+        </section>
+
+        <section id="by-boat">
+            <h2><span class="icon">🚤</span> By Boat</h2>
+            <ul>
+                <li><strong>Ferry Services:</strong> Ferries connect coastal and island destinations like Banana Islands and Tokeh Beach.</li>
+                <li><strong>Private Boat Hire:</strong> Hire a private boat for a flexible experience to islands like Sherbro and Tiwai Island.</li>
+                <li><strong>Boat Tours:</strong> Enjoy eco-tourism boat excursions to the Great Scarcies and Moa Rivers.</li>
+            </ul>
+        </section>
+
+        <section id="by-motorbike">
+            <h2><span class="icon">🏍️</span> By Motorbike</h2>
+            <ul>
+                <li><strong>Okadas (Motorbike Taxis):</strong> Fast and efficient, but be cautious and wear a helmet. They’re great for navigating busy traffic in cities.</li>
+                <li><strong>Hiring a Local Guide:</strong> Hire a local motorbike guide for off-the-beaten-path exploration, especially in rural areas.</li>
+            </ul>
+        </section>
+
+        <section id="by-foot">
+            <h2><span class="icon">👣</span> By Foot</h2>
+            <ul>
+                <li><strong>Walking:</strong> Explore towns and cities on foot to immerse yourself in local culture, especially around markets and historic sites.</li>
+                <li><strong>Hiring a Local Guide:</strong> Hire a guide to explore rural areas or hidden gems for cultural insights and safety.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Enjoy your journey through Sierra Leone! 🚗🚌🚤🏍️👣</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
