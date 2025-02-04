@@ -482,18 +482,7 @@ nav ul li.dropdown > a::after {
     font-size: 12px;
 }
 
-/* Sub-menu */
-.sub-nav {
-    display: none;
-    position: absolute;
-    background: rgba(0, 51, 102, 0.9);
-    top: 100%;
-    left: 15px; /* Indents sub-menu */
-    width: 220px;
-    padding-left: 15px; /* Extra indentation */
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    border-left: 3px solid white; /* Visual indication */
-}
+
 
 .sub-nav li {
     display: block;
@@ -524,16 +513,7 @@ nav ul .dropdown:hover .sub-nav {
         display: flex;
     }
 
-    nav {
-        display: none;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        width: 100%;
-        background: rgba(0, 51, 102, 0.95);
-        flex-direction: column;
-        padding: 15px;
-    }
+ 
 
     nav ul {
         flex-direction: column;
@@ -541,16 +521,11 @@ nav ul .dropdown:hover .sub-nav {
     }
 
     nav ul li {
-        text-align: left;
+        text-align: right;
         padding: 10px;
     }
 
-    .sub-nav {
-        position: static;
-        width: 100%;
-        display: none;
-        padding-left: 20px; /* Indent further in mobile view */
-    }
+
 
     .dropdown:hover .sub-nav {
         display: block;
