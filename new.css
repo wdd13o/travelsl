@@ -480,3 +480,27 @@ nav ul ul li {
 .hamburger.active span:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
 }
+
+
+
+
+
+
+/* Indicate Dropdown */
+nav ul li.dropdown > a::after {
+    content: " ▼"; /* Arrow Indicator */
+    font-size: 12px;
+}
+
+/* Sub-menu */
+.sub-nav {
+    display: none;
+    position: absolute;
+    background: rgba(0, 51, 102, 0.9);
+    top: 100%;
+    left: 15px; /* Indents sub-menu */
+    width: 220px;
+    padding-left: 15px; /* Extra indentation */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-left: 3px solid white; /* Visual indication */
+}
