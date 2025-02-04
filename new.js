@@ -129,5 +129,29 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+// Function to update the footer year
+document.getElementById("year").textContent = new Date().getFullYear();
+
+// Update Year & DateTime
+function updateDateTime() {
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("datetime").textContent = new Date().toLocaleString();
+}
+setInterval(updateDateTime, 1000);
+updateDateTime();
+
+// Newsletter Subscription
+function subscribe() {
+    let email = document.getElementById("email").value;
+    let message = document.getElementById("subscribe-message");
+
+    if (email.includes("@") && email.includes(".")) {
+        message.textContent = "Thank you for subscribing!";
+        message.style.color = "green";
+    } else {
+        message.textContent = "Please enter a valid email address.";
+        message.style.color = "red";
+    }
+}
 
 

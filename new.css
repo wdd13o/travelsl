@@ -500,3 +500,125 @@ nav ul li.dropdown:hover .sub-nav {
     display: block;
     animation: fadeIn 0.3s ease-in;
 }
+
+
+
+/* Logo */
+.footer-logo img {
+    max-height: 60px;
+    margin-bottom: 15px;
+}
+
+/* Footer Styling */
+footer {
+    background: #002244;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Footer Cards */
+.footer-card {
+    background: #ffffff10;
+    padding: 20px;
+    border-radius: 12px;
+    width: 250px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+/* Footer Headings */
+.footer-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #ffd700;
+}
+
+/* Contact Links */
+.footer-card p i {
+    margin-right: 8px;
+}
+
+.footer-card a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-card a:hover {
+    text-decoration: underline;
+}
+
+/* Social Media Icons */
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-icons li a {
+    color: white;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.social-icons li a:hover {
+    color: #ffd700;
+}
+
+/* Newsletter Input */
+#email {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Subscribe Button */
+.btn {
+    display: block;
+    width: 100%;
+    background: #ffd700;
+    color: #002244;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: white;
+    color: #002244;
+}
+
+/* Footer Bottom Text */
+.footer-text {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #bbb;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-card {
+        width: 90%;
+    }
+}
